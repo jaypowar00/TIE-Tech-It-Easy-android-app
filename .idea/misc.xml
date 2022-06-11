@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Jay/Android_Dev/TIE/app/src/main/res/drawable/button_style_1.xml" value="0.2795" />
+        <entry key="..\:/Jay/Android_Dev/TIE/app/src/main/res/drawable/ripple_effect.xml" value="0.3675" />
+        <entry key="..\:/Jay/Android_Dev/TIE/app/src/main/res/drawable/ripple_effect_circle_btn_background.xml" value="0.3345" />
+        <entry key="..\:/Jay/Android_Dev/TIE/app/src/main/res/drawable/round_corner_dark_blue_border.xml" value="0.231" />
+        <entry key="..\:/Jay/Android_Dev/TIE/app/src/main/res/drawable/student_data_card_view_background.xml" value="0.3345" />
+        <entry key="..\:/Jay/Android_Dev/TIE/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Jay/Android_Dev/TIE/app/src/main/res/layout/activity_take_attendance.xml" value="0.3171171171171171" />
+        <entry key="..\:/Jay/Android_Dev/TIE/app/src/main/res/layout/attendance_detail_form_fragment.xml" value="0.5" />
+        <entry key="..\:/Jay/Android_Dev/TIE/app/src/main/res/layout/fragment_blank.xml" value="0.3171171171171171" />
+        <entry key="..\:/Jay/Android_Dev/TIE/app/src/main/res/layout/student_data_activity.xml" value="0.2586050724637681" />
+        <entry key="..\:/Jay/Android_Dev/TIE/app/src/main/res/layout/student_data_item_view.xml" value="0.4448818897637795" />
+        <entry key="..\:/Jay/Android_Dev/TIE/app/src/main/res/layout/student_data_list_fragment.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

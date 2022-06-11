@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/takeAttendanceBtn"
+            android:layout_width="185dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/ripple_effect_mainscreen_button_bg"
+            android:fontFamily="@font/lucida_fax_regular"
+            android:text="Take Attendance"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_blue"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_optimizationLevel="ratio" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/studentDataBtn"
+            android:layout_width="185dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="68dp"
+            android:background="@drawable/ripple_effect_mainscreen_button_bg"
+            android:fontFamily="@font/lucida_fax_regular"
+            android:text="Student Data"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_blue"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/takeAttendanceBtn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/takeAttendanceBtn"
+            app:layout_constraintTop_toBottomOf="@+id/takeAttendanceBtn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/savedAttendanceBtn"
+            android:layout_width="185dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/ripple_effect_mainscreen_button_bg"
+            android:fontFamily="@font/lucida_fax_regular"
+            android:text="Saved Attendance"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_blue"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/studentDataBtn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/studentDataBtn"
+            app:layout_constraintTop_toBottomOf="@+id/studentDataBtn"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

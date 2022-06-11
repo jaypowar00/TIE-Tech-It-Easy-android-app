@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="attendanceViewModel"
+            type="com.redranger00.tie.attendanceEntry.ui.attendanceEntry.AttendanceDetailFormViewModel"/>
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".attendanceEntry.ui.attendanceEntry.AttendanceDetailForm">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:elevation="4dp"
+                android:textColor="@color/dark_blue"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            <EditText
+                android:id="@+id/divisionEditText"
+                android:layout_width="310dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/division_input_background"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/classEditText"
+                android:layout_width="310dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/class_input_background"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                app:layout_constraintEnd_toEndOf="@+id/divisionEditText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/divisionEditText"
+                app:layout_constraintTop_toBottomOf="@+id/divisionEditText"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/subjectEditText"
+                android:layout_width="310dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/subject_input_background"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                app:layout_constraintEnd_toEndOf="@+id/classEditText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/classEditText"
+                app:layout_constraintTop_toBottomOf="@+id/classEditText"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/dateEditText"
+                android:layout_width="310dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/date_input_background"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                app:layout_constraintEnd_toEndOf="@+id/subjectEditText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/subjectEditText"
+                app:layout_constraintTop_toBottomOf="@+id/subjectEditText"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/InstructorEditText"
+                android:layout_width="310dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/instructor_name_input_background"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                app:layout_constraintEnd_toEndOf="@+id/dateEditText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/dateEditText"
+                app:layout_constraintTop_toBottomOf="@+id/dateEditText"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/StudentDataEditText"
+                android:layout_width="310dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/student_data_input_background"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                app:layout_constraintEnd_toEndOf="@+id/InstructorEditText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/InstructorEditText"
+                app:layout_constraintTop_toBottomOf="@+id/InstructorEditText"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/takeAttendanceBtn"
+                android:layout_width="185dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="52dp"
+                android:background="@drawable/ripple_effect_mainscreen_button_bg"
+                android:fontFamily="@font/lucida_fax_regular"
+                android:text="Take Attendance"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_blue"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/StudentDataEditText"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="@+id/StudentDataEditText"
+                app:layout_constraintTop_toBottomOf="@+id/StudentDataEditText"
+                app:layout_optimizationLevel="ratio" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+</layout>
